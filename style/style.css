@@ -92,7 +92,6 @@
         max-width: 1440px;
         margin: auto;
         padding: 0 2rem;
-        display: none;
     }
     /* Search */
         h1{
@@ -110,7 +109,7 @@
             margin-top: 2rem;
         }
         #search form div{
-            width: 50px;
+            width: 50px !important;
             height: 50px;
             background-color: #F2F2F2;
             border-radius: 1rem 0 0 1rem;
@@ -124,7 +123,7 @@
             border-top: 1px solid #F2F2F2;
             border-bottom: 1px solid #F2F2F2;
             font-size: 1rem;
-            padding: 0 2rem;
+            padding-left: 2rem;
         }
         #search form button{
             height: 50px;
@@ -145,13 +144,17 @@
             align-items: center;
             flex-wrap: wrap;
         }
+        #searchFilters h2{
+            margin-right: 2rem;
+        }
         .filter{
             display: flex;
             align-items: center;
             background-color: white;
             border-radius: 2rem;
             border: 2px solid #F2F2F2;
-            margin: 1rem 2rem;
+            margin: 1rem 0;
+            margin-right: 4rem;
             box-shadow: 8px 8px 12px rgb(194, 194, 194);
         }
         .filter div{
@@ -190,6 +193,7 @@
     /* Hosting */
         #hosting{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin-bottom: 50px;
         }
@@ -210,7 +214,7 @@
                 margin: 20px 0;
             }
             #hostingMain h2, #viewMore{
-                margin-left: 10px;
+                padding-left: 1rem;
                 font-weight: bold;
             }
             #hostingMain img{
@@ -241,9 +245,11 @@
             }
             aside h2{
                 width: 100%;
+                padding-left: 1rem;
             }
             aside h2 i{
                 float: right;
+                margin-right: 1.4rem;
             }
             aside article{
                 background-color: white;
@@ -266,6 +272,70 @@
             aside figcaption p{
                 margin: 13px 0;
             }
+
+            @media (max-width: 1440px){
+                main{
+                    padding: 0;
+                    width: 100%;
+                }
+                #hostingMain,aside{
+                    width: 100%;
+                }
+                #hostingMain{
+                    background-color: inherit;
+                    border-radius: inherit;
+                }
+                aside{
+                    order: -1;
+                    border-radius: inherit;
+                }
+                #searchFilters h2{
+                    width: 100%;
+                }
+                #search form, #searchFilters,#searchResult,#searchHeader{
+                    margin: 2rem;
+                }
+                #search form button i{
+                    display: block;
+                }
+                #search form button span{
+                    display: none;
+                }
+                #search form input{
+                    width: 100%;
+                }
+                #activity{
+                    padding: 2rem;
+                }
+                #activity img{
+                    width: 100% !important;
+                    height: 9.2rem !important;
+                }
+                #activity figure{
+                    margin: 0px !important;
+                    margin-top: 50px !important;
+                }
+                #activity .divider img{
+                    width: 100%;
+                }
+                footer{
+                    margin-top: 100px;
+                }
+            }
+            @media (max-width: 850px){
+                #hostingMain article{
+                    width: 43%;
+                }
+                #footerContent div{
+                    width: 100% !important;
+                    margin-top: 20px;
+                }
+            }
+            @media (max-width: 600px){
+                #hostingMain article{
+                    width: 100%;
+                }
+            }
     /* Activity */
     #activity{
         display: flex;
@@ -280,17 +350,14 @@
         border-radius: 1rem;
         margin: 50px 0px;
         box-shadow: 8px 8px 12px rgb(194, 194, 194);
+        background-color: white;
     }
     #activity h3{
         padding: 15px;
     }
-    #activity figure{
-        background-color: white;
-        margin: 50px 0px;
-    }
     #activity img{
         width: 300px;
-        height:25rem;
+        height: 25rem;
         border-radius: 1rem 1rem 0 0;
     }
     #activity .divider img{
@@ -306,6 +373,7 @@ footer{
     margin: auto;
     padding: 0 2rem;
     display: flex;
+    flex-wrap: wrap;
 }
 #footerContent div{
     display: flex;
@@ -318,3 +386,4 @@ footer{
 #footerContent div a{
     margin: 10px 0;
 }
+
