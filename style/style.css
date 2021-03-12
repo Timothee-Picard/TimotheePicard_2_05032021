@@ -28,33 +28,71 @@
         padding: 0 2rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         align-items: center;
     }
     nav{
         display: flex;
     }
+    #logo{
+        flex-grow: 4;
+        order: -2;
+    }
     nav a{
         padding: 2rem;
-        border-top: 3px solid transparent
+        border-top: 3px solid transparent;
+        text-align: center;
     }
     nav a[data-active=true]{
         color: #0065FC;
         border-top: 3px solid #0065FC;
     }
-    nav a:hover:not(#signUp){
+    nav a:hover{
         color: #0065FC;
         border-top: 3px solid #0065FC;
     }
     #signUp{
         color: #0065FC;
         font-weight: 600;
+        padding: 2rem;
+    }
+    @media (max-width: 650px) {
+        header{
+            padding: 0;
+        }
+        header img{
+            padding: 0 2rem;
+        }
+        nav{
+            padding-top: 1rem;
+            width: 100%;
+        }
+        nav a{
+            width: 50%;
+            padding: 2rem;
+            border: none;
+            border-bottom: 3px solid transparent;
+            text-align: center;
+        }
+        nav a[data-active=true]{
+            color: #0065FC;
+            border: none;
+            border-bottom: 3px solid #0065FC;
+        }
+        nav a:hover{
+            color: #0065FC;
+            border: none;
+            border-bottom: 3px solid #0065FC;
+        }
+        #signUp{
+            order: -1;
+        }
     }
 /* Main */
     main{
         max-width: 1440px;
         margin: auto;
         padding: 0 2rem;
+        display: none;
     }
     /* Search */
         h1{
