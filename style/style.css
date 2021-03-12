@@ -114,6 +114,7 @@
             border-radius: 2rem;
             border: 2px solid #F2F2F2;
             margin: 1rem 2rem;
+            box-shadow: 8px 8px 12px rgb(194, 194, 194);
         }
         .filter div{
             height: 50px;
@@ -184,6 +185,7 @@
                 border-radius: 1.2rem;
                 margin: 10px;
                 padding: 0.5rem;
+                box-shadow: 8px 8px 12px rgb(194, 194, 194);
             }
             #hostingMain article figcaption{
                 padding: 10px;
@@ -209,6 +211,7 @@
                 border-radius: 1.2rem;
                 margin: 30px 10px;
                 padding: 0.5rem;
+                box-shadow: 8px 8px 12px rgb(194, 194, 194);
             }
             aside figure{
                 display: flex;
@@ -225,10 +228,54 @@
                 margin: 13px 0;
             }
     /* Activity */
-
+    #activity{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #activity h2{
+        width: 100%;
+    }
+    #activity figure{
+        background-color: white;
+        border-radius: 1rem;
+        margin: 50px 0px;
+        box-shadow: 8px 8px 12px rgb(194, 194, 194);
+    }
+    #activity h3{
+        padding: 15px;
+    }
+    #activity figure{
+        background-color: white;
+        margin: 50px 0px;
+    }
+    #activity img{
+        width: 300px;
+        height:25rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+    #activity .divider img{
+        height: 9.2rem;
+    }
 /* Footer */
 footer{
+    background-color: #F2F2F2;
+    padding: 30px 0;
+}
+#footerContent{
     max-width: 1440px;
     margin: auto;
     padding: 0 2rem;
+    display: flex;
+}
+#footerContent div{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+#footerContent div h3{
+    margin: 20px 0;
+}
+#footerContent div a{
+    margin: 10px 0;
 }
