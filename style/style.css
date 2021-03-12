@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-#activity{
-    display: none;
-}
 /* 
     Bleu = #0065FC
     Bleu Claire = #DEEBFF
@@ -155,7 +152,6 @@
         #hosting{
             display: flex;
             justify-content: space-between;
-            background-color: blue;
         }
         #hosting h2{
             width: 100%;
@@ -163,28 +159,70 @@
         /* hostingMain */
             #hostingMain{
                 width: 64%;
-                background-color: red;
+                background-color: #F2F2F2;
                 padding: 2%;
+                border-radius: 2rem;
+            }
+            #hostingMainContent{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                margin: 20px 0;
+            }
+            #hostingMain h2, #viewMore{
+                margin-left: 10px;
+                font-weight: bold;
             }
             #hostingMain img{
                 width: 100%;
                 height: 7rem;
+                border-radius: 1rem 1rem 0 0;
             }
             #hostingMain article{
-                width: 31%;
+                width: 28%;
+                background-color: white;
+                border-radius: 1.2rem;
+                margin: 10px;
+                padding: 0.5rem;
+            }
+            #hostingMain article figcaption{
+                padding: 10px;
+            }
+            #hostingMain article figcaption p{
+                margin: 0.5rem 0;
             }
         /* HostingAside */
             aside{
                 width: 26%;
-                background-color: yellow;
+                background-color: #F2F2F2;
                 padding: 2%;
+                border-radius: 2rem;
+            }
+            aside h2{
+                width: 100%;
+            }
+            aside h2 i{
+                float: right;
+            }
+            aside article{
+                background-color: white;
+                border-radius: 1.2rem;
+                margin: 30px 10px;
+                padding: 0.5rem;
+            }
+            aside figure{
+                display: flex;
             }
             aside img{
-                width: 40%;
-                height: 7rem;
+                width: 8rem;
+                height: 8rem;
+                border-radius: 1rem 0 0 1rem;
+            }
+            aside figcaption{
+                padding: 10px;
+            }
+            aside figcaption p{
+                margin: 13px 0;
             }
     /* Activity */
 
