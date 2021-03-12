@@ -153,6 +153,7 @@
         #hosting{
             display: flex;
             justify-content: space-between;
+            margin-bottom: 50px;
         }
         #hosting h2{
             width: 100%;
