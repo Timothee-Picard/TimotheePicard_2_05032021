@@ -109,8 +109,8 @@
             margin-top: 2rem;
         }
         #search form div{
-            width: 50px !important;
-            height: 50px;
+            min-width: 50px;
+            min-height: 50px;
             background-color: #F2F2F2;
             border-radius: 1rem 0 0 1rem;
             display: flex;
@@ -133,7 +133,7 @@
             color: white;
             font-weight: bold;
             font-size: 1rem;
-            padding: 0 2rem;
+            padding: 0 1rem;
         }
         #search form button i{
             display: none;
@@ -159,8 +159,8 @@
             cursor: pointer;
         }
         .filter div{
-            height: 50px;
-            width: 50px;
+            min-height: 50px;
+            min-width: 50px;
             border-radius: 50%;
             background-color: #DEEBFF;
             display: flex;
@@ -182,8 +182,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 30px;
-            width: 30px;
+            min-height: 30px;
+            min-width: 30px;
             border-radius: 50%;
             color: #0065FC;
             border: #DEEBFF solid 2px;
@@ -220,6 +220,9 @@
             #hostingMain h2, #viewMore{
                 padding-left: 1rem;
                 font-weight: bold;
+            }
+            #viewMore:hover{
+                color: #0065FC;
             }
             #hostingMain img{
                 width: 100%;
@@ -283,10 +286,14 @@
                 }
                 #hostingMain,aside{
                     width: 100%;
+                    padding: 2rem;
                 }
                 #hostingMain{
                     background-color: inherit;
                     border-radius: inherit;
+                }
+                #hosting article{
+                    margin: 1.5rem 0;
                 }
                 aside{
                     order: -1;
