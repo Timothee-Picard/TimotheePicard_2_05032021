@@ -197,8 +197,11 @@
             justify-content: space-between;
             margin-bottom: 50px;
         }
-        #hosting h2{
-            width: 100%;
+        .star i[data-active=true]{
+            color: #0065FC;
+        }
+        .star i[data-active=false]{
+            color: #F2F2F2;
         }
         /* hostingMain */
             #hostingMain{
@@ -244,7 +247,6 @@
                 border-radius: 2rem;
             }
             aside h2{
-                width: 100%;
                 padding-left: 1rem;
             }
             aside h2 i{
