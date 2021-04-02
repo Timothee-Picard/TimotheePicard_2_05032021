@@ -269,7 +269,7 @@
             }
             aside img{
                 width: 8rem;
-                height: 8rem;
+                
                 border-radius: 1rem 0 0 1rem;
             }
             aside figcaption{
@@ -278,7 +278,11 @@
             aside figcaption p{
                 margin: 13px 0;
             }
-
+            @media (min-width: 400px){
+                aside img{
+                    height: 8rem;
+                }
+            }
             @media (max-width: 1440px){
                 main{
                     padding: 0;
